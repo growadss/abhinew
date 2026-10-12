@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Trade With Harish | Kannada Market Analytics</title>
+  <meta name="description" content="ಕನ್ನಡದಲ್ಲಿ Nifty ಮತ್ತು BankNifty ಲೈವ್ ಪ್ರೈಸ್ ಆಕ್ಷನ್ ಕಲಿಕೆ. 100% ಉಚಿತ ಶೈಕ್ಷಣಿಕ ಟೆಲಿಗ್ರಾಂ ಕಮ್ಯೂನಿಟಿ.">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2147219935894323');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2147219935894323&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    :root {
+      --bg-dark: #040914;
+      --card-bg: rgba(10, 18, 36, 0.88);
+      --gold-primary: #f59e0b;
+      --gold-bright: #fbbf24;
+      --cyan-tech: #00f2fe;
+      --emerald-mint: #10b981;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-accent: rgba(251, 191, 36, 0.38);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans Kannada', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+      min-height: 100vh;
+      background: radial-gradient(circle at 50% 12%, #0b1f48 0%, #061026 55%, var(--bg-dark) 100%);
+      color: var(--text-main);
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    .glow-gold {
+      position: absolute;
+      top: -90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.28) 0%, transparent 70%);
+      filter: blur(65px);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .glow-cyan {
+      position: absolute;
+      bottom: -70px;
+      right: 10%;
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(0, 242, 254, 0.22) 0%, transparent 70%);
+      filter: blur(60px);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 405px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-accent);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border-radius: 28px;
+      padding: 24px 20px 18px;
+      text-align: center;
+      box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.9), inset 0 1px 1px rgba(255, 255, 255, 0.16);
+    }
+
+    .live-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(245, 158, 11, 0.14);
+      border: 1px solid rgba(245, 158, 11, 0.45);
+      padding: 5px 14px;
+      border-radius: 50px;
+      font-size: 11px;
+      color: var(--gold-bright);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+
+    .pulse-dot {
+      width: 7px;
+      height: 7px;
+      background-color: var(--gold-bright);
+      border-radius: 50%;
+      animation: blink 1.4s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.8); }
+    }
+
+    .brand-strip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 242, 254, 0.12);
+      border: 1px solid rgba(0, 242, 254, 0.45);
+      padding: 5px 16px;
+      border-radius: 50px;
+      font-size: 13px;
+      color: var(--cyan-tech);
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: 0.3px;
+    }
+
+    .verified-icon {
+      width: 14px;
+      height: 14px;
+      fill: var(--cyan-tech);
+    }
+
+    .kannada-lead {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--gold-bright);
+      margin-bottom: 8px;
+      letter-spacing: 0.2px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 10px;
+      letter-spacing: -0.3px;
+      background: linear-gradient(180deg, #ffffff 15%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.subtitle {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      margin-bottom: 16px;
+    }
+
+    .matrix-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .matrix-box {
+      background: rgba(5, 12, 28, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 10px 8px;
+      text-align: center;
+    }
+
+    .matrix-title {
+      font-size: 11px;
+      color: var(--gold-bright);
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .matrix-desc {
+      font-size: 11.5px;
+      color: #f1f5f9;
+      font-weight: 500;
+    }
+
+    .community-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px dashed rgba(16, 185, 129, 0.45);
+      border-radius: 12px;
+      padding: 9px 12px;
+      font-size: 12px;
+      color: #34d399;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .cta-btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 13px 16px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #ffffff;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .cta-primary {
+      background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 50%, #00f2fe 100%);
+      box-shadow: 0 4px 20px rgba(14, 165, 233, 0.5);
+      animation: pulseCyan 2s infinite ease-in-out;
+      margin-bottom: 9px;
+    }
+
+    @keyframes pulseCyan {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 12px rgba(14, 165, 233, 0.4), 0 0 22px rgba(245, 158, 11, 0.25);
+      }
+      50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 22px rgba(14, 165, 233, 0.8), 0 0 34px rgba(245, 158, 11, 0.45);
+      }
+    }
+
+    .cta-secondary {
+      background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%);
+      color: #061126;
+      box-shadow: 0 4px 18px rgba(245, 158, 11, 0.45);
+      animation: pulseGold 2.2s infinite ease-in-out;
+    }
+
+    @keyframes pulseGold {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(245, 158, 11, 0.35);
+      }
+      50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 22px rgba(245, 158, 11, 0.7);
+      }
+    }
+
+    .cta-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.38), transparent);
+      animation: shimmer 2.4s infinite;
+    }
+
+    @keyframes shimmer {
+      100% { left: 100%; }
+    }
+
+    .cta-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .btn-subtext {
+      display: block;
+      font-size: 10px;
+      font-weight: 600;
+      opacity: 0.92;
+      margin-top: 1px;
+    }
+
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 9.5px;
+      color: #64748b;
+      line-height: 1.35;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 8px;
+    }
+
+    .redirect-box {
+      margin-top: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid rgba(14, 165, 233, 0.35);
+      border-radius: 50px;
+      padding: 4px 14px;
+      font-size: 11px;
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .redirect-seconds {
+      color: var(--gold-bright);
+      font-weight: 800;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow-gold"></div>
+  <div class="glow-cyan"></div>
+
+  <div class="card">
+    
+    <div class="live-pill">
+      <span class="pulse-dot"></span>
+      ಕನ್ನಡದಲ್ಲಿ ಲೈವ್ ಇಂಡೆಕ್ಸ್ ವಿಶ್ಲೇಷಣೆ
+    </div>
+
+    <div class="brand-strip">
+      <svg class="verified-icon" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      Trade With Harish
+    </div>
+
+    <div class="kannada-lead">ನಮಸ್ಕಾರ! ಕನ್ನಡದಲ್ಲೇ ಕಲಿಯಿರಿ ಶಿಸ್ತಿನ ಟ್ರೇಡಿಂಗ್</div>
+
+    <h1>NIFTY &amp; BANKNIFTY SMART PRICE ACTION</h1>
+
+    <p class="subtitle">
+      ಕುರುಡು ಟ್ರೇಡಿಂಗ್ ಬಿಟ್ಟುಬಿಡಿ. ಕೀ ಸಪೋರ್ಟ್ ಲೆವೆಲ್ಸ್, ಫೇಕ್ ಬ್ರೇಕ್‌ಔಟ್ ಫಿಲ್ಟರ್ಸ್ ಮತ್ತು ರಿಸ್ಕ್ ಕಂಟ್ರೋಲ್ ನಿಯಮಗಳನ್ನು ಸರಳವಾಗಿ ಕಲಿಯಿರಿ.
+    </p>
+
+    <div class="matrix-container">
+      <div class="matrix-box">
+        <div class="matrix-title">📊 Index Levels</div>
+        <div class="matrix-desc">ಡೈಲಿ ಚಾರ್ಟ್ ಲೆವೆಲ್ಸ್ &amp; ರೇಂಜ್ ಸ್ಟಡಿ</div>
+      </div>
+      <div class="matrix-box">
+        <div class="matrix-title">🛡️ Risk Rules</div>
+        <div class="matrix-desc">ಕ್ಯಾಪಿಟಲ್ ಪ್ರೊಟೆಕ್ಷನ್ &amp; ಸೆಟಪ್ಸ್</div>
+      </div>
+    </div>
+
+    <div class="community-strip">
+      <span>✦ 100% ಉಚಿತ ಶೈಕ್ಷಣಿಕ ಸ್ಟಡಿ ಗ್ರೂಪ್ ✦</span>
+    </div>
+
+    <!-- CTA Button 1 -->
+    <a href="https://t.me/+UK6QnplB8TxhZWE9" onclick="fbq('track', 'Subscribe');" class="cta-btn cta-primary" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+      <div>
+        <span>JOIN FREE TELEGRAM CHANNEL</span>
+        <span class="btn-subtext">ಉಚಿತವಾಗಿ ಟೆಲಿಗ್ರಾಂನಲ್ಲಿ ಸೇರಿರಿ</span>
+      </div>
+    </a>
+
+    <!-- CTA Button 2 -->
+    <a href="https://t.me/+UK6QnplB8TxhZWE9" onclick="fbq('track', 'Subscribe');" class="cta-btn cta-secondary" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.52 2.77-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+      <div>
+        <span>GET DAILY CHART STUDIES</span>
+        <span class="btn-subtext">ಈಗಲೇ ಉಚಿತವಾಗಿ ಜಾಯಿನ್ ಆಗಿ</span>
+      </div>
+    </a>
+
+    <div class="disclaimer">
+      <strong>ಗಮನಿಸಿ:</strong> ಇದು ಶೈಕ್ಷಣಿಕ ಮತ್ತು ತಾಂತ್ರಿಕ ವಿಶ್ಲೇಷಣೆ ಉದ್ದೇಶಕ್ಕಾಗಿ ಮಾತ್ರ. ಯಾವುದೇ ಹೂಡಿಕೆ ಅಥವಾ ಲಾಭದ ಖಾತರಿ ನೀಡಲಾಗುವುದಿಲ್ಲ. ಷೇರು ಮಾರುಕಟ್ಟೆ ರಿಸ್ಕ್ ಒಳಪಟ್ಟಿರುತ್ತದೆ.
+    </div>
+
+    <!-- 5-Sec Auto Redirect Counter -->
+    <div class="redirect-box">
+      <span>Auto Redirecting in</span>
+      <span class="redirect-seconds" id="timer">5</span>
+      <span>sec...</span>
+    </div>
+
+  </div>
+
+  <script>
+    let timeLeft = 5;
+    const timerElem = document.getElementById("timer");
+    const targetUrl = "https://t.me/+UK6QnplB8TxhZWE9";
+
+    const countdown = setInterval(function() {
+      timeLeft--;
+      if (timeLeft >= 0) {
+        timerElem.innerText = timeLeft;
+      }
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        window.location.href = targetUrl;
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
